@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet">
-    <link rel="stylesheet" href="./css/modern-normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"/>
     <link rel="stylesheet" href="./css/styles.css">
     <title>WebStudio</title>
 </head>
@@ -19,7 +19,7 @@
             <nav class="nav-header">
                 <ul class="nav-list">
                     <li class="nav-items">
-                        <a class="nav-links nav-links-current" href="./index.html">Studio</a>
+                        <a class="nav-links studio-links-current" href="./index.html">Studio</a>
                     </li>
                     <li class="nav-items">
                         <a class="nav-links" href="./portfolio.html">Portfolio</a>
@@ -51,7 +51,15 @@
         <section class="hero-section">
             <div class="container hero-container">
                 <h1 class="hero-title">EFFECTIVE SOLUTIONS FOR <br> YOuR BUSINESS</h1>
-                <button class="request-button" type="button">Request our service</button>
+                <button class="request-button" type="button" data-modal-open>Request our service</button>
+                    <div class="button-backdrop is-hidden" data-modal>
+                        <div class="modal-content">
+                            <svg class="modal-close" width="5" height="5" data-modal-close>
+                                <use href="./images/sprite.svg#icon-Vector"></use>
+                            </svg>
+                            <!-- <button class="modal-close" type="button" data-modal-close>&times;</button> -->
+                        </div>
+                    </div>
             </div>
         </section>
 
@@ -111,12 +119,15 @@
             <ul class="what-we-do-list">
                 <li class="what-we-do-items">
                     <img src="./images/typing.jpg" alt="Man Coding" width='370' height='294'>
+                    <p class="what-we-do-content">Desktop Apps</p>
                 </li>
                 <li class="what-we-do-items">
                     <img src="./images/phone.jpg" alt="Man checking his phone" width='370' height='294'>
+                    <p class="what-we-do-content">Mobile Apps</p>
                 </li>
                 <li class="what-we-do-items">
                     <img src="./images/tablet.jpg" alt="Man holding his tablet" width='370' height='294'>
+                    <p class="what-we-do-content">Design Solution</p>
                 </li>
             </ul>
             </div> 
@@ -363,7 +374,7 @@
                         </a>
                     </li>
                     <li class="footer-icon-item">
-                        <a href="#" class="footer-icon-link">
+                        <a href="#" class="footer-twitter-link">
                             <svg class="link-icon" width="20" height="17">
                                 <use href="./images/sprite.svg#icon-twitter"></use>                                    
                             </svg>
@@ -386,6 +397,7 @@
                 </ul>    
         </div>
         </div>
-    </footer>   
+    </footer>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
