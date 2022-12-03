@@ -248,6 +248,11 @@ header {
     padding: 9px 10px;
 }
 
+.modal-close:hover, 
+.modal-close:focus {
+    background-color: rgb(223, 217, 217);
+}
+
 .is-hidden {
     opacity: 0;
     visibility: hidden;
@@ -342,6 +347,7 @@ header {
 
 .what-we-do-items {
     position: relative;
+    z-index: -1;
 }
 
 .what-we-do-content {
@@ -504,7 +510,6 @@ footer {
     color: var(--white-font-color);
     margin-bottom: 20px;
 }
-
 
 /* PORTFOLIO BUTTONS */
 
@@ -744,14 +749,9 @@ footer {
     margin-right: 10px;
 }
 
-.footer-twitter-link{
+.footer-icon-link:hover, 
+.footer-icon-link:focus {
+    color: var(--light-background-color);
     background-color: var(--logo-color);
-    color: var(--white-font-color);
-    width: 44px;
-    height: 44px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
 }
 
