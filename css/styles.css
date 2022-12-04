@@ -121,9 +121,9 @@ header {
 .studio-links-current::after {
     content: '';
     position: absolute;
+    display:block;
     width: 48px;
     height: 4px;
-    left: 328px;
     top: 76px;
     background: var(--logo-color);
     border-radius: 2px; 
@@ -383,7 +383,6 @@ header {
                 0px 1px 1px rgba(0, 0, 0, 0.14), 
                 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-    padding-bottom: 30px;
 }
 
 .our-team-items:not(:last-child) {
@@ -516,9 +515,9 @@ footer {
 .portfolio-links-current::after {
     content: '';
     position: absolute;
-    width: 70px;
+    display: block;
+    width: 60px;
     height: 4px;
-    left: 437px;
     top: 76px;
     background: var(--logo-color);
     border-radius: 2px; 
